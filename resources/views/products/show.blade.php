@@ -23,7 +23,7 @@
                     <div class="card-body">
                         <h3>{{ $product->title }}</h3>
                         <hr/>
-                        <p>{{ "Rp " . number_format($product->price,2,',','.') }}</p>
+                        <p>{{ "$ " . number_format($product->price,2,',','.') }}</p>
                         <code>
                             <p>{!! $product->description !!}</p>
                         </code>

@@ -13,7 +13,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div>
-                    <h3 class="text-center my-4">Essais</h3>
+                    <h3 class="text-center my-4">Essaie</h3>
                     <hr>
                 </div>
                 <div class="card border-0 shadow-sm rounded">
@@ -36,7 +36,7 @@
                                             <img src="{{ asset('/storage/products/'.$product->image) }}" class="rounded" style="width: 150px">
                                         </td>
                                         <td>{{ $product->title }}</td>
-                                        <td>{{ "Rp " . number_format($product->price,2,',','.') }}</td>
+                                        <td>{{ "$ " . number_format($product->price,2,',','.') }}</td>
                                         <td>{{ $product->stock }}</td>
                                         <td class="text-center">
                                             <form onsubmit="return confirm('Test 1 ?');" action="{{ route('products.destroy', $product->id) }}" method="POST">
