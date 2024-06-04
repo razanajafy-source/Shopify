@@ -5,6 +5,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/contact', function () {
-    return view('Contact.Contact'); 
-});
+
+//route resource for products
+Route::resource('/products', \App\Http\Controllers\ProductController::class);
